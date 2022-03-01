@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: school
+  datasource:
+    url: jdbc:mysql://172.30.0.2:3306/school?createDatabaseIfNotExist=true
+    username: root
+    password: Armin#123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        driverClassName:
+          com.mysql.cj.jdbc.Driver
+        dialect:
+          org.hibernate.dialect.MySQL8Dialect
+    open-in-view: true
+
+server:
+  port: 7070
+logging:
+  level:
+    com:
+      school: debug
